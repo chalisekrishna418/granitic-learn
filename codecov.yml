@@ -1,0 +1,19 @@
+codecov:
+  # TODO:: set this token in env and utilise it
+  token: 1c064c31-a215-46c4-9871-eda5ca16c77c
+  
+# for different options available
+# refer codecov documentation (https://docs.codecov.io/docs/pull-request-comments)
+comment:
+  layout: "diff"
+  behavior: new
+  require_changes: false  # if true: only post the comment if coverage changes
+  require_base: no        # [yes :: must have a base report to post]
+  require_head: no       # [yes :: must have a head report to post]
+  branches: null
+
+coverage:
+  status:
+    project:
+      go:
+        paths: "endpoint/"
