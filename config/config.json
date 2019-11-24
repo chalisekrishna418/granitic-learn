@@ -1,0 +1,9 @@
+{
+	"Facilities": {
+	  "HTTPServer": true,
+	  "JSONWs": true
+	},
+	"ApplicationLogger":{
+		"GlobalLogLevel": "TRACE"
+	}
+}

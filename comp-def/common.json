@@ -1,0 +1,24 @@
+{
+  "packages": [
+    "github.com/graniticio/granitic/v2/ws/handler",
+    "scrumize/endpoint"
+  ],
+  "components": {
+    "storyHandler": {
+      "type": "handler.WsHandler",
+      "HTTPMethod": "GET",
+      "Logic": {
+        "type": "endpoint.LSRequestBody"
+      },
+      "PathPattern": "^/story/list"
+    },
+    "createStoryHandler": {
+      "type": "handler.WsHandler",
+      "HTTPMethod": "POST",
+      "Logic": {
+        "type": "endpoint.CSRequestBody"
+      },
+      "PathPattern": "^/story/create"
+    }
+  }
+}
